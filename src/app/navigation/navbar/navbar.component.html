@@ -1,31 +1,53 @@
-<header>
-
-</header>
 <nav  class="navbar fondo">
 
   <div class="sections">
+
     <div class="title">
       <a id= "titulo" class="navbar-brand" >Sweet Treat</a>
+
+      <div class="links">
+        <ul class="nav nav-pills nav-justified nav2">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contáctanos</a>
+          </li>
+        </ul>
+      </div>
+
       <div class="icon">
-        <span class="material-icons login" >login</span>
-        <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#staticBackdrop"> Login</button>
+        <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#staticBackdrop"> <span class="material-icons login" >login</span> </button>
+
       </div>
     </div>
-    <div class="links">
-      <ul class="nav nav-pills nav-justified nav2">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Tienda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contáctanos</a>
-        </li>
-      </ul>
-    </div>
+
 
   </div>
 
 </nav>
+
+<!-- Modal -->
+<div class="modal fade bton" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Iniciar sesión</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Iniciar sesión</button>
+      </div>
+    </div>
+  </div>
+</div>
 

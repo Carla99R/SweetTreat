@@ -19,10 +19,8 @@
   display: flex;
   justify-content: center;
   font-size: 10px;
-  padding-top: 30px;
-  padding-right: 50px;
   width: 50%;
-  flex: 1;
+  flex: 0.3;
 }
 
 .icon_user{
@@ -53,28 +51,27 @@
   display: flex;
   justify-content: space-between;
   color: black;
-  font-size: 3em;
-  padding-top: 35px;
+  font-size: 2em;
   cursor: pointer;
 }
 
 .fondo{
-  height: 130px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
-  background: transparent;
+  background: #9A8A8A;
   width: 100%;
 }
 
 #titulo{
   display: flex;
-  justify-content: center;
-  font-size: 70px;
-  flex: 3;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 40px;
+  flex: 0.5;
   color: darkslategray;
   cursor: pointer;
-  padding-left: 65px;
-  padding-top: 33px;
+  padding-left: 40px;
   font-family: wonka;
 }
 
@@ -101,21 +98,24 @@
 
 .sections{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
 }
 
 .links{
   width: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  flex: 0.8;
+  justify-content: center;
 }
 .nav-item{
   margin-left: 10px;
+}
+
+a{
+  color: whitesmoke;
 }
 
 .nav2{
@@ -124,6 +124,31 @@
   width: 100%;
 }
 
-.btn{
-  width: 20%;
+.bton{
+  margin-left: 10px;
+  width: 100%;
+  height: 50%;
 }
+
+.btn{
+  background: transparent;
+  border: transparent;
+}
+
+.nav-pills .nav-link.active{
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  font-weight: bolder;
+}
+
+a.nav-link{
+  font-size: 20px;
+}
+
+.nav-pills .nav-link{
+  display: flex;
+  justify-content: space-between;
+  font-weight: lighter;
+}
+
