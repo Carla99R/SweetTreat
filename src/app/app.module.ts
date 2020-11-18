@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PaginaPrincipalComponent } from './modules/paginaPrincipal/pagina-principal/pagina-principal.component';
+import { PaginaPrincipalComponent } from './modules/pagina-principal/pagina-principal.component';
+import { NavbarComponent } from './navigation/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PaginaPrincipalComponent
+    PaginaPrincipalComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

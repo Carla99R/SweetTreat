@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'wonka';
+  src: url("../../../assets/fonts/willy-wonka/WillyWonka.ttf");
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.title{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  padding-top: 30px;
+  padding-right: 50px;
+  width: 50%;
+  flex: 1;
+}
+
+.icon_user{
+  display: flex;
+  font-size: 10px;
+}
+
+.icon p{
+  display: flex;
+  justify-content: flex-start;
+  flex: 3;
+  color: black;
+  font-size: 2em;
+  padding-left: 5px;
+  padding-top: 30px;
+}
+
+#user{
+  display: flex;
+  justify-content: center;
+  flex: 3;
+  color: #ECEFF1;
+  font-size: 20px;
+  flex: 1;
+}
+
+.login{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-size: 3em;
+  padding-top: 35px;
+  cursor: pointer;
+}
+
+.fondo{
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  width: 100%;
+}
+
+#titulo{
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  flex: 3;
+  color: darkslategray;
+  cursor: pointer;
+  padding-left: 65px;
+  padding-top: 33px;
+  font-family: wonka;
+}
+
+
+.icon_user{
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+#logout{
+  display: flex;
+  justify-content: space-between;
+  color: #ECEFF1;
+  font-size: 3em;
+  padding-top: 5px;
+  cursor: pointer;
+  flex: 0.2;
+}
+
+.nav-link{
+  cursor: pointer;
+}
+
+.sections{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.links{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.nav-item{
+  margin-left: 10px;
+}
+
+.nav2{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn{
+  width: 20%;
+}

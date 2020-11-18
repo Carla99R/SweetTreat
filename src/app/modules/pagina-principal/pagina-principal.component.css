@@ -1,0 +1,9 @@
+.img{
+  height: 100vh;
+}
+
+header{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
