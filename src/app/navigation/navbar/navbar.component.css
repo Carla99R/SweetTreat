@@ -2,10 +2,7 @@
   font-family: 'wonka';
   src: url("../../../assets/fonts/willy-wonka/WillyWonka.ttf");
 }
-*{
-  margin: 0;
-  padding: 0;
-}
+
 .title{
   display: flex;
   width: 100%;
@@ -149,10 +146,8 @@ a.nav-link{
 .modal-title{
   width: 100%;
   font-size: 1.5em;
-  padding: 1em;
+  padding: 0.5em;
   font-family: wonka;
-  display: flex;
-  justify-content: flex-start;
   color: #ECEFF1;
 }
 
@@ -162,10 +157,25 @@ a.nav-link{
 
 .modal-footer{
   background-color: #C6F0E6;
+  height: 4em;
 }
 
-.carla {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+.modal-footer a{
+  padding-right: 1em;
+  color: #FF3F0A;
+  font-size: 0.7em;
 }
+
+.modal-footer p{
+  padding-right: 1em;
+  font-size: 0.7em;
+}
+
+#recuperar{
+ cursor: pointer;
+}
+
+#registrar{
+  cursor: pointer;
+}
+

@@ -30,9 +30,9 @@
 </nav>
 
 <!-- Modal -->
-<div class="desplegable">
+
   <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
-    <div class="modal-dialog modal-xl">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="staticBackdropLabel">Sweet Treat</h5>
@@ -40,16 +40,26 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" [ngStyle]="{'display': !flag && help ? 'block':'none'}">
           <app-login></app-login>
         </div>
+        <div class="modal-body" [ngStyle]="{'display': flag && help ? 'block':'none'}">
+          <app-recuperar></app-recuperar>
+        </div>
+
+        <div class="modal-body" [ngStyle]="{'display': !help? 'block':'none'}">
+          <app-registrar></app-registrar>
+        </div>
+
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <a id="recuperar" (click)= "recuperar()" > {{!flag? '¿Olvidaste tu contraseña?': 'Login'}} </a>
+          <p>¿No tienes cuenta?</p>
+          <a id="registrar" (click)= "registrar()">{{!flag? 'Registrate': ''}}</a>
         </div>
       </div>
     </div>
   </div>
-</div>
+
 
 
 

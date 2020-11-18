@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { PaginaPrincipalComponent } from './modules/pagina-principal/pagina-principal.component';
 import { NavbarComponent } from './navigation/navbar/navbar.component';
 import { LoginComponent } from './modules/login/login.component';
+import { RecuperarComponent } from './modules/recuperar/recuperar.component';
+import { RegistrarComponent } from './modules/registrar/registrar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PaginaPrincipalComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    RecuperarComponent,
+    RegistrarComponent
   ],
   imports: [
     BrowserModule,

@@ -7,9 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  flag = false;
+  help = true;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+  recuperar(): void {
+    this.flag = !this.flag;
+    this.help = true;
+  }
+  registrar(): void {
+    this.help = !this.help;
+    this.flag = true;
   }
 }
