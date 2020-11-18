@@ -18,7 +18,7 @@
 .icon{
   display: flex;
   justify-content: center;
-  font-size: 10px;
+  font-size: 1em;
   width: 50%;
   flex: 0.3;
 }
@@ -67,7 +67,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 40px;
+  font-size: 2.5em;
   flex: 0.5;
   color: darkslategray;
   cursor: pointer;
@@ -125,13 +125,7 @@ a{
 }
 
 .bton{
-  margin-left: 10px;
-  width: 100%;
-  height: 50%;
-}
-
-.btn{
-  background: transparent;
+  background-color: transparent;
   border: transparent;
 }
 
@@ -143,7 +137,7 @@ a{
 }
 
 a.nav-link{
-  font-size: 20px;
+  font-size: 1.2em;
 }
 
 .nav-pills .nav-link{
@@ -152,3 +146,26 @@ a.nav-link{
   font-weight: lighter;
 }
 
+.modal-title{
+  width: 100%;
+  font-size: 1.5em;
+  padding: 1em;
+  font-family: wonka;
+  display: flex;
+  justify-content: flex-start;
+  color: #ECEFF1;
+}
+
+.modal-header{
+  background-color: #C6F0E6;
+}
+
+.modal-footer{
+  background-color: #C6F0E6;
+}
+
+.carla {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
