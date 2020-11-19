@@ -8,6 +8,9 @@ import { NavbarComponent } from './navigation/navbar/navbar.component';
 import { LoginComponent } from './modules/login/login.component';
 import { RecuperarComponent } from './modules/recuperar/recuperar.component';
 import { RegistrarComponent } from './modules/registrar/registrar.component';
+import { TiendaComponent } from './modules/tienda/tienda.component';
+import { NosotrosComponent } from './modules/nosotros/nosotros.component';
+import { ContactanosComponent } from './modules/contactanos/contactanos.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { RegistrarComponent } from './modules/registrar/registrar.component';
     NavbarComponent,
     LoginComponent,
     RecuperarComponent,
-    RegistrarComponent
+    RegistrarComponent,
+    TiendaComponent,
+    NosotrosComponent,
+    ContactanosComponent
   ],
   imports: [
     BrowserModule,

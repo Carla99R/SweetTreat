@@ -14,10 +14,11 @@
 
 .icon{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 20px;
   font-size: 1em;
   width: 50%;
-  flex: 0.3;
+  flex: 0.4;
 }
 
 .icon_user{
@@ -66,7 +67,7 @@
   align-items: center;
   font-size: 2.5em;
   flex: 0.5;
-  color: darkslategray;
+  color: whitesmoke;
   cursor: pointer;
   padding-left: 40px;
   font-family: wonka;
@@ -101,6 +102,7 @@
 }
 
 .links{
+  padding-right: 40px;
   width: 50%;
   display: flex;
   align-items: center;
@@ -126,12 +128,6 @@ a{
   border: transparent;
 }
 
-.nav-pills .nav-link.active{
-  display: flex;
-  justify-content: space-between;
-  background-color: transparent;
-  font-weight: bolder;
-}
 
 a.nav-link{
   font-size: 1.2em;
@@ -160,12 +156,6 @@ a.nav-link{
   height: 4em;
 }
 
-.modal-footer a{
-  padding-right: 1em;
-  color: #FF3F0A;
-  font-size: 0.7em;
-}
-
 .modal-footer p{
   padding-right: 1em;
   font-size: 0.7em;
@@ -173,9 +163,38 @@ a.nav-link{
 
 #recuperar{
  cursor: pointer;
+  background-color: #E9D9D9;
+  border-radius: 10px;
+  color: #FA9AA8;
+  font-size: 0.7em;
+  border: transparent;
+  box-shadow: 1px 2px gray;
 }
 
 #registrar{
   cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #E9D9D9;
+  border-radius: 10px;
+  color: #FA9AA8;
+  font-size: 0.7em;
+  border: transparent;
+  box-shadow: 1px 2px gray;
 }
 
+.bolsa{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.nav-item a:hover{
+  color: darkslategray;
+}
+
+.activo{
+  font-weight: bolder;
+}

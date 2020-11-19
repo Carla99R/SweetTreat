@@ -3,23 +3,24 @@
   <div class="sections">
 
     <div class="title">
-      <a id= "titulo" class="navbar-brand" >Sweet Treat</a>
+      <a id= "titulo" class="navbar-brand"  routerLink="/inicio">Sweet Treat</a>
 
       <div class="links">
         <ul class="nav nav-pills nav-justified nav2">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Tienda</a>
+          <li class="nav-item"  routerLinkActive="activo">
+            <a class="nav-link " routerLink="/tienda"  >Tienda</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
+          <li class="nav-item" routerLinkActive="activo">
+            <a  class="nav-link" routerLink="/nosotros" >Nosotros</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contáctanos</a>
+          <li class="nav-item" routerLinkActive="activo">
+            <a class="nav-link" routerLink="/nosotros" >Contáctanos</a>
           </li>
         </ul>
       </div>
 
       <div class="icon">
+        <button class="bolsa"><span class="material-icons">shopping_bag</span></button>
         <button type="button" class="btn btn-primary bton" data-toggle="modal" data-target="#staticBackdrop"> <span class="material-icons login" >login</span> </button>
 
       </div>
@@ -52,8 +53,8 @@
         </div>
 
         <div class="modal-footer">
-          <a id="recuperar" (click)= "recuperar()" > {{!flag? '¿Olvidaste tu contraseña?': 'Login'}} </a>
-          <p>¿No tienes cuenta?</p>
+          <button class= "btn-primary" id="recuperar" (click)= "recuperar()" > {{!flag? '¿Olvidaste tu contraseña?': 'Login'}} </button>
+          <p (click)= "recuperar()" > {{!flag? '¿No tienes cuenta?': ''}}</p>
           <a id="registrar" (click)= "registrar()">{{!flag? 'Registrate': ''}}</a>
         </div>
       </div>
