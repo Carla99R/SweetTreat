@@ -8,7 +8,7 @@
       <div class="links">
         <ul class="nav nav-pills nav-justified nav2">
           <li class="nav-item"  routerLinkActive="activo">
-            <a class="nav-link " routerLink="/tienda"  >Tienda</a>
+            <a class="nav-link " routerLink="tienda"  >Tienda</a>
           </li>
           <li class="nav-item" routerLinkActive="activo">
             <a  class="nav-link" routerLink="/nosotros" >Nosotros</a>
@@ -22,7 +22,7 @@
       <div class="icon">
         <button class="bolsa"><span class="material-icons">shopping_bag</span></button>
         <button type="button" class="btn btn-primary bton" data-toggle="modal" data-target="#staticBackdrop"> <span class="material-icons login" >login</span> </button>
-
+        <button (click)="logout()" type="button" class="btn btn-primary bton"> Logout </button>
       </div>
     </div>
 

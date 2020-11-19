@@ -11,6 +11,8 @@ import { RegistrarComponent } from './modules/registrar/registrar.component';
 import { TiendaComponent } from './modules/tienda/tienda.component';
 import { NosotrosComponent } from './modules/nosotros/nosotros.component';
 import { ContactanosComponent } from './modules/contactanos/contactanos.component';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { ContactanosComponent } from './modules/contactanos/contactanos.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]

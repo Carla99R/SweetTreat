@@ -4,6 +4,10 @@ import {PaginaPrincipalComponent} from './modules/pagina-principal/pagina-princi
 import {TiendaComponent} from './modules/tienda/tienda.component';
 import {NosotrosComponent} from './modules/nosotros/nosotros.component';
 import {ContactanosComponent} from './modules/contactanos/contactanos.component';
+import {AngularFireAuthGuard, redirectLoggedInTo, redirectUnauthorizedTo} from '@angular/fire/auth-guard'
+
+const redirectUnauththorizedToLogin = () => redirectUnauthorizedTo(['contactanos'])
+const redirectLoggedInToTienda = () => redirectLoggedInTo(['tienda']);
 
 const routes: Routes = [
   {
@@ -17,6 +21,8 @@ const routes: Routes = [
   {
     path: 'tienda',
     component: TiendaComponent,
+    canActivate: [AngularFireAuthGuard],
+    data: { authGuardPipe: redirectLoggedInTo}
   },
   {
     path: 'nosotros',

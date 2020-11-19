@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "sweettreat-c7500": {
+      "hosting": {
+        "SweetTreat": [
+          "sweettreat-c7500"
+        ]
+      }
+    }
+  }
+}
