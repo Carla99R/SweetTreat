@@ -18,7 +18,10 @@
     </div>
 
     <div class="opciones"*ngIf="!user">
-      <span (click)="loginG()"><img id="google" class="go"src="assets/images/google.png"></span>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span class="google" (click)="loginG()" ><img id="google" src="assets/images/google.png" data-dismiss="modal"></span>
+      </button>
+
 
     </div>
 

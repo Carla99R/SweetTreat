@@ -22,32 +22,6 @@ export class NavbarComponent implements OnInit {
   }
   ngOnInit(): void {
   }
-
-  login(email: string, password: string): void{
-    this.auth.signInWithEmailAndPassword(email, password).then(function() {
-      console.log('logged in');
-    })
-      .catch(function(error) {
-        console.log(error);
-      });
-  }
-
-  loginG(): void {
-    this.authService.loginG();
-    this.authService.user.subscribe(a => {
-      console.log(a);
-      this.user = a;
-    });
-  }
-  private checkUserIsVerified(user: User): void {
-    if (user && user.emailVerified) {
-      this.router.navigate(['/home']);
-    } else if (user) {
-      this.router.navigate(['/verification-email']);
-    } else {
-      this.router.navigate(['/register']);
-    }
-  }
   recuperar(): void {
     this.flag = !this.flag;
     this.help = true;
@@ -59,6 +33,9 @@ export class NavbarComponent implements OnInit {
 
   logout(){
     this.auth.signOut();
+  }
+  CierraPopup() {
+
   }
 
 }
