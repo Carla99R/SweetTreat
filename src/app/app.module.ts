@@ -13,6 +13,10 @@ import { NosotrosComponent } from './modules/nosotros/nosotros.component';
 import { ContactanosComponent } from './modules/contactanos/contactanos.component';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireStorageModule, BUCKET } from '@angular/fire/storage';
+
+import { AuthService } from './service/auth.service';
 
 @NgModule({
   declarations: [

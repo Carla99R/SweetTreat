@@ -33,7 +33,7 @@
   color: black;
   font-size: 2em;
   padding-left: 5px;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 #user{
@@ -47,7 +47,8 @@
 
 .login{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-size: 2em;
   cursor: pointer;
@@ -199,4 +200,11 @@ a.nav-link{
 .activo{
   font-weight: bolder;
   font-size: 1.3em;
+}
+
+#user{
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

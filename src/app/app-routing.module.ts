@@ -4,9 +4,9 @@ import {PaginaPrincipalComponent} from './modules/pagina-principal/pagina-princi
 import {TiendaComponent} from './modules/tienda/tienda.component';
 import {NosotrosComponent} from './modules/nosotros/nosotros.component';
 import {ContactanosComponent} from './modules/contactanos/contactanos.component';
-import {AngularFireAuthGuard, redirectLoggedInTo, redirectUnauthorizedTo} from '@angular/fire/auth-guard'
+import {AngularFireAuthGuard, redirectLoggedInTo, redirectUnauthorizedTo} from '@angular/fire/auth-guard';
 
-const redirectUnauththorizedToLogin = () => redirectUnauthorizedTo(['contactanos'])
+const redirectUnauththorizedToLogin = () => redirectUnauthorizedTo(['contactanos']);
 const redirectLoggedInToTienda = () => redirectLoggedInTo(['tienda']);
 
 const routes: Routes = [
