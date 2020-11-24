@@ -31,11 +31,9 @@ export class NavbarComponent implements OnInit {
     this.flag = true;
   }
 
-  logout(){
+  logout(): void{
     this.auth.signOut();
-  }
-  CierraPopup() {
-
+    this.router.navigate(['/inicio']);
   }
 
 }

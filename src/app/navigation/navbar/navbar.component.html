@@ -20,11 +20,12 @@
       </div>
 
       <div class="icon" *ngIf="user">
-        <button class="bolsa"><span class="material-icons">shopping_bag</span></button>
-        <span class="material-icons login" (click)="logout()" >login</span><p id="user">{{user.displayName}}</p>
+        <span class="material-icons iconos">shopping_bag</span>
+        <span class="material-icons iconos" id="perfil" routerLink="/perfil">person</span><p id="user">{{user.displayName}}</p>
+        <span class="material-icons login" (click)="logout()" >login</span>
       </div>
       <div class="icon" *ngIf="!user">
-        <button class="bolsa"><span class="material-icons">shopping_bag</span></button>
+        <button class="iconos"><span class="material-icons">shopping_bag</span></button>
         <button type="button" class="btn btn-primary bton" data-toggle="modal" data-target="#staticBackdrop"> <span class="material-icons login" >login</span> </button>
 
       </div>

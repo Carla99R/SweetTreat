@@ -184,13 +184,18 @@ a.nav-link{
   box-shadow: 1px 2px gray;
 }
 
-.bolsa{
+.iconos{
   background-color: transparent;
   border: none;
   display: flex;
   align-items: center;
   padding-right: 15px;
   color: white;
+  cursor: pointer;
+}
+
+#perfil{
+  font-size: 2em;
 }
 
 .nav-item a:hover{
@@ -207,4 +212,7 @@ a.nav-link{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 0.9;
 }
+
+

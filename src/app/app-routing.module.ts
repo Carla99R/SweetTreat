@@ -4,6 +4,9 @@ import {PaginaPrincipalComponent} from './modules/pagina-principal/pagina-princi
 import {TiendaComponent} from './modules/tienda/tienda.component';
 import {NosotrosComponent} from './modules/nosotros/nosotros.component';
 import {ContactanosComponent} from './modules/contactanos/contactanos.component';
+import {BolsaComponent} from './modules/bolsa/bolsa.component';
+import {PerfilComponent} from './modules/perfil/perfil.component';
+import { AuthGuard } from './guards/auth.guard';
 import {AngularFireAuthGuard, redirectLoggedInTo, redirectUnauthorizedTo} from '@angular/fire/auth-guard';
 
 const redirectUnauththorizedToLogin = () => redirectUnauthorizedTo(['contactanos']);
@@ -31,6 +34,15 @@ const routes: Routes = [
   {
     path: 'contactanos',
     component: ContactanosComponent,
+  },
+  {
+    path: 'bolsa',
+    component: BolsaComponent,
+  },
+  {
+    path: 'perfil',
+    component: PerfilComponent,
+    canActivate: [AuthGuard]
   }
 ];
 

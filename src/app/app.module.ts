@@ -17,6 +17,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule, BUCKET } from '@angular/fire/storage';
 
 import { AuthService } from './service/auth.service';
+import { BolsaComponent } from './modules/bolsa/bolsa.component';
+import { PerfilComponent } from './modules/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { AuthService } from './service/auth.service';
     RegistrarComponent,
     TiendaComponent,
     NosotrosComponent,
-    ContactanosComponent
+    ContactanosComponent,
+    BolsaComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
