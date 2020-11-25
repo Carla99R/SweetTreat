@@ -7,6 +7,8 @@
   height: calc(100vh - 96px);
   width: 100%;
   background-color:#F8EFEF;
+  display: flex;
+  flex-direction: row;
 }
 
 .datos{
@@ -32,7 +34,7 @@
 
 .info{
   padding-top: 5%;
-  padding-left: 5%;
+  padding-left: 10%;
   width: 90%;
   padding-bottom: 10%;
 }
@@ -57,4 +59,41 @@
   display: flex;
   justify-content: center;
   padding-top: 10%;
+}
+
+.pedidos{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7%;
+
+}
+
+.pedidos img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pedidos p{
+  color: brown;
+  font-size: 1.6em;
+  font-family: one;
+}
+
+.pedidos figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50%;
+}
+
+.tabla{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
 }
