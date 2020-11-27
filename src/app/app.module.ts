@@ -15,10 +15,13 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from 'src/environments/environment';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireStorageModule, BUCKET } from '@angular/fire/storage';
+import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 import { AuthService } from './service/auth.service';
 import { BolsaComponent } from './modules/bolsa/bolsa.component';
 import { PerfilComponent } from './modules/perfil/perfil.component';
+import { StatusPedidoComponent } from './modules/status-pedido/status-pedido.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +35,15 @@ import { PerfilComponent } from './modules/perfil/perfil.component';
     NosotrosComponent,
     ContactanosComponent,
     BolsaComponent,
-    PerfilComponent
+    PerfilComponent,
+    StatusPedidoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    ProgressbarModule.forRoot(),
+    TooltipModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

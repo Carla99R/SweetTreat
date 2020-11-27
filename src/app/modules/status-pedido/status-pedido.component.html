@@ -1,0 +1,35 @@
+<div class="pedidos">
+  <div class="info">
+    <figure>
+      <img src="assets/images/pedidos.png">
+      <p>Estatus de pedido</p>
+    </figure>
+
+    <div class="list-group lista">
+      <a href="#" class="list-group-item list-group-item-action active">
+        Cras justo odio
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+      <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+      <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+      <a href="#" class="list-group-item list-group-item-action " >Vestibulum at eros</a>
+    </div>
+  </div>
+
+  <div class="status">
+    <div class="barras">
+      <progressbar  class="progress-bar-striped active" [value]="dynamic" type="danger"></progressbar>
+      <progressbar  class="progress-bar-striped active" [value]="dynamic" type="warning"></progressbar>
+      <progressbar class="progress-bar-striped active" [value]="dynamic" type="success"></progressbar>
+      <progressbar class="progress-striped active"  [value]="dynamic" type="info"></progressbar>
+    </div>
+    <div class="progreso">
+      <p>Procesando</p>
+      <p>Preparando</p>
+      <p>Listo</p>
+      <p>Entregado</p>
+    </div>
+    <button type="button" class="btn btn-sm btn-primary" (click)="random()">Randomize</button>
+  </div>
+
+</div>

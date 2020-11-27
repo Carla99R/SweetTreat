@@ -6,6 +6,7 @@ import {NosotrosComponent} from './modules/nosotros/nosotros.component';
 import {ContactanosComponent} from './modules/contactanos/contactanos.component';
 import {BolsaComponent} from './modules/bolsa/bolsa.component';
 import {PerfilComponent} from './modules/perfil/perfil.component';
+import {StatusPedidoComponent} from './modules/status-pedido/status-pedido.component';
 import { AuthGuard } from './guards/auth.guard';
 import {AngularFireAuthGuard, redirectLoggedInTo, redirectUnauthorizedTo} from '@angular/fire/auth-guard';
 
@@ -42,6 +43,11 @@ const routes: Routes = [
   {
     path: 'perfil',
     component: PerfilComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'StatusPedidos',
+    component: StatusPedidoComponent,
     canActivate: [AuthGuard]
   }
 ];

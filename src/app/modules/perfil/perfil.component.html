@@ -51,8 +51,8 @@
   </div>
 
   <div class="pedidos">
-    <div>
-      <figure>
+    <div class="fig">
+      <figure routerLink="/StatusPedidos">
         <img src="assets/images/pedidos.png">
         <p>Pedidos realizados</p>
       </figure>
@@ -66,6 +66,7 @@
         <th scope="col">Nombre</th>
         <th scope="col">Fecha</th>
         <th scope="col">Estatus</th>
+        <th scope="col">Cantidad</th>
       </tr>
       </thead>
       <tbody>
@@ -74,18 +75,21 @@
         <td>Mark</td>
         <td>Otto</td>
         <td>@mdo</td>
+        <td>1g</td>
       </tr>
       <tr>
         <th scope="row">2</th>
         <td>Jacob</td>
         <td>Thornton</td>
         <td>@fat</td>
+        <td>2g</td>
       </tr>
       <tr>
         <th scope="row">3</th>
         <td >Larry the Bird</td>
         <td>Thornton</td>
         <td>@twitter</td>
+        <td>2g</td>
       </tr>
       </tbody>
     </table>
