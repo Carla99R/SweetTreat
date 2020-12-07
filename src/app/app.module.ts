@@ -22,6 +22,7 @@ import { AuthService } from './service/auth.service';
 import { BolsaComponent } from './modules/bolsa/bolsa.component';
 import { PerfilComponent } from './modules/perfil/perfil.component';
 import { StatusPedidoComponent } from './modules/status-pedido/status-pedido.component';
+import { EditorPedidosComponent } from './modules/editor-pedidos/editor-pedidos.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { StatusPedidoComponent } from './modules/status-pedido/status-pedido.com
     ContactanosComponent,
     BolsaComponent,
     PerfilComponent,
-    StatusPedidoComponent
+    StatusPedidoComponent,
+    EditorPedidosComponent
   ],
   imports: [
     BrowserModule,

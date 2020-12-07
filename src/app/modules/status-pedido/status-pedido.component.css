@@ -16,6 +16,7 @@
 .info{
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 40%;
 }
@@ -25,17 +26,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 3.5;
+  flex: 3;
   padding-left: 20%;
-  margin-top: 12%;
+  margin-top: 5%;
 }
 
 .lista{
   display: flex;
-  justify-content: flex-end;
-  flex: 1;
-  padding-top: 23%;
+  flex-direction: column;
+  flex: 1.5;
+  margin-top: 10%;
   padding-right: 5%;
+  height: 100%;
+}
+
+.bton{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
 }
 
 .info p{
@@ -77,3 +85,34 @@
   justify-content: space-around;
 }
 
+.secundario{
+  cursor: pointer;
+  background-color: #E9D9D9;
+  border-radius: 10px;
+  color: #FA9AA8;
+  font-size: 0.8em;
+  border: transparent;
+  box-shadow: 1px 2px gray;
+}
+
+.boton{
+  display: flex;
+  width: 100%;
+  margin-left: 7%;
+}
+
+#agregar{
+  display: flex;
+  justify-content: center;
+  font-family: one;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  color: #9A8A8A;
+  font-size: 0.9em;
+  border: transparent;
+  box-shadow: 1px 2px gray;
+  font-weight: bold;
+}

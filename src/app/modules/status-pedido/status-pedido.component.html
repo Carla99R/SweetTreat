@@ -1,18 +1,43 @@
 <div class="pedidos">
+
   <div class="info">
     <figure>
       <img src="assets/images/pedidos.png">
       <p>Estatus de pedido</p>
     </figure>
 
-    <div class="list-group lista">
-      <a href="#" class="list-group-item list-group-item-action active">
-        Cras justo odio
-      </a>
-      <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-      <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-      <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-      <a href="#" class="list-group-item list-group-item-action " >Vestibulum at eros</a>
+    <div class="table-responsive lista">
+      <table class="table table-sm table-bordered">
+        <thead>
+        <tr>
+          <th scope="col">Producto</th>
+          <th scope="col">Gramaje</th>
+          <th scope="col">Precio</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry the Bird</td>
+          <td>Thornton</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <div class="bton">
+        <button type="button" class="btn btn-primary secundario" routerLink="/editorPedido"> Editar </button>
+        <button type="button" class= "btn tn-primary" id="agregar" routerLink="/bolsa">Agregar al carrito</button>
+      </div>
     </div>
   </div>
 
@@ -30,6 +55,10 @@
       <p>Entregado</p>
     </div>
     <button type="button" class="btn btn-sm btn-primary" (click)="random()">Randomize</button>
+  </div>
+  
+  <div class="boton">
+    <button class= "btn-primary secundario" id="volver" routerLink="/perfil"> Volver </button>
   </div>
 
 </div>
