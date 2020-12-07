@@ -23,6 +23,7 @@ import { BolsaComponent } from './modules/bolsa/bolsa.component';
 import { PerfilComponent } from './modules/perfil/perfil.component';
 import { StatusPedidoComponent } from './modules/status-pedido/status-pedido.component';
 import { EditorPedidosComponent } from './modules/editor-pedidos/editor-pedidos.component';
+import { ProductoComponent } from './modules/producto/producto.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { EditorPedidosComponent } from './modules/editor-pedidos/editor-pedidos.
     BolsaComponent,
     PerfilComponent,
     StatusPedidoComponent,
-    EditorPedidosComponent
+    EditorPedidosComponent,
+    ProductoComponent
   ],
   imports: [
     BrowserModule,

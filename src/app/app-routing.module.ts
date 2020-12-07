@@ -10,6 +10,7 @@ import {StatusPedidoComponent} from './modules/status-pedido/status-pedido.compo
 import { AuthGuard } from './guards/auth.guard';
 import {AngularFireAuthGuard, redirectLoggedInTo, redirectUnauthorizedTo} from '@angular/fire/auth-guard';
 import {EditorPedidosComponent} from './modules/editor-pedidos/editor-pedidos.component';
+import {ProductoComponent} from './modules/producto/producto.component';
 
 const redirectUnauththorizedToLogin = () => redirectUnauthorizedTo(['contactanos']);
 const redirectLoggedInToTienda = () => redirectLoggedInTo(['tienda']);
@@ -53,6 +54,10 @@ const routes: Routes = [
     path: 'editorPedido',
     component: EditorPedidosComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'producto',
+    component: ProductoComponent
   }
 ];
 
