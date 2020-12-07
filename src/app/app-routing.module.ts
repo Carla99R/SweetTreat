@@ -25,9 +25,7 @@ const routes: Routes = [
   },
   {
     path: 'tienda',
-    component: TiendaComponent,
-    canActivate: [AngularFireAuthGuard],
-    data: { authGuardPipe: redirectLoggedInTo}
+    component: TiendaComponent
   },
   {
     path: 'nosotros',
