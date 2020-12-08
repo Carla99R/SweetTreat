@@ -8,8 +8,8 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
   styleUrls: ['./bolsa.component.css']
 })
 export class BolsaComponent implements OnInit {
-  modalRef: BsModalRef;
   message: string;
+  modalRef: BsModalRef;
   constructor(private modalService: BsModalService) {
     this.message = '';
   }

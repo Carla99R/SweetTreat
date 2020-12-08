@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'ones';
+  font-family: 'una';
   src: url("../../../assets/fonts/new_dimension/New Dimension.otf");
 }
 
 @font-face {
-  font-family: 'one';
+  font-family: 'unas';
   src: url("../../../assets/fonts/bawnee/bawnee.otf");
 }
 
@@ -41,7 +41,7 @@
 .agregar{
   display: flex;
   justify-content: center;
-  font-family: one;
+  font-family: unas;
   cursor: pointer;
   padding-left: 5px;
   padding-right: 5px;
@@ -68,7 +68,7 @@
 .titulo{
   display: flex;
   justify-content: center;
-  font-family: ones;
+  font-family: una;
   font-size: 2.6em;
   width: 100%;
   padding-top: 3%;
@@ -96,7 +96,7 @@
 
 .nombre{
   display: flex;
-  font-family: ones;
+  font-family: una;
   font-size: 1.3em;
   padding-top: 5%;
 }
@@ -123,7 +123,7 @@
 .price{
   width: 100%;
   font-weight: bold;
-  font-family: one;
+  font-family: unas;
   font-size: 1.1em;
   align-items: center;
   display: flex;

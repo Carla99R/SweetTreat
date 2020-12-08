@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'ones';
+  font-family: 'wcas';
   src: url("../../../assets/fonts/new_dimension/New Dimension.otf");
 }
 
 @font-face {
-  font-family: 'one';
-  src: url("../../../assets/fonts/bawnee/bawnee.otf");
+  font-family: 'wca';
+  src: url("../../../assets/fonts/petrichor_sublimey/Petrichor Sublimey.otf");
 }
 
 .retiro {
@@ -18,23 +18,40 @@
 .metodo{
   display: flex;
   justify-content: center;
-  font-family: ones;
+  font-family: wcas;
   font-size: 2.8em;
   padding: 5%;
+  width: 100%;
 }
 
 .secundario{
   display: flex;
   justify-content: center;
-  font-family: one;
+  align-items: center;
+  align-content: center;
+  font-family: wca;
   cursor: pointer;
   padding-left: 5px;
   padding-right: 5px;
   background-color: #FFFFFF;
   border-radius: 15px;
   color: #9A8A8A;
-  font-size: 0.9em;
+  font-size: 1.5em;
   border: transparent;
   box-shadow: 1px 2px gray;
   font-weight: bold;
+}
+
+
+.contenedor{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.mere{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
