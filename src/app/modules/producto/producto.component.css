@@ -1,9 +1,19 @@
+@font-face {
+  font-family: 'ones';
+  src: url("../../../assets/fonts/new_dimension/New Dimension.otf");
+}
+
+@font-face {
+  font-family: 'one';
+  src: url("../../../assets/fonts/bawnee/bawnee.otf");
+}
 
 .producto{
   height: 100vh;
   position: fixed;
   width: 100%;
   display: flex;
+  background-color:#F8EFEF;
 }
 
 .foto{
@@ -11,7 +21,6 @@
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  background-color: #FA9AA8;
 }
 
 .principal{
@@ -43,14 +52,12 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: darkred;
   justify-content: center;
 }
 
 .datos{
   display: flex;
   flex-direction: column;
-  background-color: #FA9AA8;
 }
 
 .datos h5{
@@ -61,6 +68,64 @@
 .descripcion{
   font-weight: lighter;
   text-align: justify;
-  padding: 5%;
+  padding: 5% 10% 0% 5%;
 }
 
+.precio{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.price{
+  font-weight: bold;
+  font-family: one;
+  font-size: 1.5em;
+}
+
+.bton{
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+#agregar{
+  display: flex;
+  justify-content: center;
+  font-family: one;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  color: #9A8A8A;
+  font-size: 0.9em;
+  border: transparent;
+  box-shadow: 1px 2px gray;
+  font-weight: bold;
+}
+
+.secundario{
+  cursor: pointer;
+  background-color: #FEE8E8;
+  border-radius: 15px;
+  color: #FA9AA8;
+  font-size: 0.8em;
+  border: transparent;
+  box-shadow: 1px 2px gray;
+  font-weight: bold;
+}
+
+.nombre{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+  font-family: ones;
+  font-size: 2.7em;
+}
+
+.cantidades{
+  padding: 5%;
+  font-weight: bold;
+}

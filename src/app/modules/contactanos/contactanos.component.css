@@ -1,5 +1,5 @@
 iframe{
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
 .info{
@@ -7,7 +7,8 @@ iframe{
   justify-content: space-around;
   background-color: #F8EFEF;
   height: 100vh;
-
+  position: fixed;
+  width: 100%;
 }
 
 .contact{
