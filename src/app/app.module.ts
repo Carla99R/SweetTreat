@@ -24,6 +24,8 @@ import { PerfilComponent } from './modules/perfil/perfil.component';
 import { StatusPedidoComponent } from './modules/status-pedido/status-pedido.component';
 import { EditorPedidosComponent } from './modules/editor-pedidos/editor-pedidos.component';
 import { ProductoComponent } from './modules/producto/producto.component';
+import { MetodoPagoComponent } from './modules/metodo-pago/metodo-pago.component';
+import {ModalModule} from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -40,14 +42,16 @@ import { ProductoComponent } from './modules/producto/producto.component';
     PerfilComponent,
     StatusPedidoComponent,
     EditorPedidosComponent,
-    ProductoComponent
+    ProductoComponent,
+    MetodoPagoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     ProgressbarModule.forRoot(),
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

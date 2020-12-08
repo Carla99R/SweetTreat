@@ -11,6 +11,7 @@ import { AuthGuard } from './guards/auth.guard';
 import {AngularFireAuthGuard, redirectLoggedInTo, redirectUnauthorizedTo} from '@angular/fire/auth-guard';
 import {EditorPedidosComponent} from './modules/editor-pedidos/editor-pedidos.component';
 import {ProductoComponent} from './modules/producto/producto.component';
+import {MetodoPagoComponent} from './modules/metodo-pago/metodo-pago.component';
 
 const redirectUnauththorizedToLogin = () => redirectUnauthorizedTo(['contactanos']);
 const redirectLoggedInToTienda = () => redirectLoggedInTo(['tienda']);
@@ -59,6 +60,11 @@ const routes: Routes = [
   {
     path: 'producto',
     component: ProductoComponent
+  },
+  {
+    path: 'metodoPago',
+    component: MetodoPagoComponent,
+    canActivate: [AuthGuard]
   }
 ];
 

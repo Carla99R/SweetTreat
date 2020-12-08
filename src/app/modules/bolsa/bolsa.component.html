@@ -68,8 +68,8 @@
 
     <div class="botones">
       <div class="bton">
-        <button type="button" class="btn btn-primary secundario" routerLink="/bolsa"> ELiminar de lista de deseo </button>
-        <button type="button" class= "btn tn-primary" class="agregar" routerLink="/bolsa">Agregar al carrito</button>
+        <button type="button" class="btn btn-primary secundario" data-bs-toggle="modal" data-bs-target="#exampleModal"> ELiminar de lista de deseo </button>
+        <button type="button" class= "btn tn-primary agregar">Agregar al carrito</button>
       </div>
     </div>
 
@@ -149,11 +149,25 @@
 
     <div class="botones">
       <div class="bton">
-        <button type="button" class="btn btn-primary secundario" routerLink="/bolsa"> ELiminar del carrito </button>
-        <button type="button" class= "btn tn-primary" class="agregar" routerLink="/bolsa">Proceder con el pago</button>
+        <button type="button" class="btn btn-primary secundario" (click)="openModal(template)">ELiminar del carrito</button>
+        <button type="button" class= "btn btn-primary agregar" routerLink="/metodoPago">Proceder con el pago</button>
       </div>
     </div>
 
   </div>
-
 </div>
+
+
+
+<ng-template #template>
+  <div class="modal-body text-center confirmacion">
+    <p>¿Desea eliminar el producto?</p>
+    <div class="btones">
+      <button type="button" class="btn btn-default activo" (click)="confirm()" >Sí</button>
+      <button type="button" class="btn btn-default inactivo" (click)="decline()" >No</button>
+    </div>
+
+  </div>
+</ng-template>
+
+

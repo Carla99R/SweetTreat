@@ -147,3 +147,29 @@
   height: 8em;
   width: 100%;
 }
+
+.confirmacion{
+  background-color: #C6F0E6;
+  height: 10em;
+  width: 25em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.btones{
+  display: flex;
+  justify-content: center;
+}
+
+.activo{
+  background-color: #FFFF;
+  border: 1px solid #9A8A8A;
+}
+
+.inactivo{
+  border: 1px solid #9A8A8A;
+  margin-left: 2%;
+}
+
