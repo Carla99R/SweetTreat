@@ -20,7 +20,7 @@
       </div>
 
       <div class="icon" *ngIf="user">
-        <span class="material-icons iconos">shopping_bag</span>
+        <span class="material-icons iconos" routerLink="/bolsa">shopping_bag</span>
         <span class="material-icons iconos" id="perfil" routerLink="/perfil">person</span><p id="user">{{user.displayName}}</p>
         <span class="material-icons login" (click)="logout()" >login</span>
       </div>
