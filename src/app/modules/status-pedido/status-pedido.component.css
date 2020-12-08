@@ -1,6 +1,11 @@
 @font-face {
   font-family: 'one';
-  src: url("../../../assets/fonts/fomtage_script/Fomtage Script.ttf");
+  src: url("../../../assets/fonts/bawnee/bawnee.otf");
+}
+
+@font-face {
+  font-family: 'ones';
+  src: url("../../../assets/fonts/boogie_worth/Boogie worth three.ttf");
 }
 
 .pedidos{
@@ -48,8 +53,8 @@
 
 .info p{
   color: brown;
-  font-size: 1.6em;
-  font-family: one;
+  font-size: 2.6em;
+  font-family: ones;
 }
 
 .status{
