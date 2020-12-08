@@ -1,6 +1,7 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
+
 @Component({
   selector: 'app-bolsa',
   templateUrl: './bolsa.component.html',
@@ -9,8 +10,9 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 export class BolsaComponent implements OnInit {
   modalRef: BsModalRef;
   message: string;
-  constructor(private modalService: BsModalService) { }
-
+  constructor(private modalService: BsModalService) {
+    this.message = '';
+  }
   ngOnInit(): void {
   }
 
@@ -19,7 +21,7 @@ export class BolsaComponent implements OnInit {
   }
 
   confirm(): void {
-    this.message ='Confirmed!';
+    this.message = 'Confirmed!';
     this.modalRef.hide();
   }
 

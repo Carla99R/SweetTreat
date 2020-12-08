@@ -26,6 +26,9 @@ import { EditorPedidosComponent } from './modules/editor-pedidos/editor-pedidos.
 import { ProductoComponent } from './modules/producto/producto.component';
 import { MetodoPagoComponent } from './modules/metodo-pago/metodo-pago.component';
 import {ModalModule} from 'ngx-bootstrap/modal';
+import { MetodoRetiroComponent } from './modules/metodo-retiro/metodo-retiro.component';
+import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,8 @@ import {ModalModule} from 'ngx-bootstrap/modal';
     StatusPedidoComponent,
     EditorPedidosComponent,
     ProductoComponent,
-    MetodoPagoComponent
+    MetodoPagoComponent,
+    MetodoRetiroComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,9 @@ import {ModalModule} from 'ngx-bootstrap/modal';
     AngularFireModule.initializeApp(environment.firebase),
     ProgressbarModule.forRoot(),
     TooltipModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    BsDropdownModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

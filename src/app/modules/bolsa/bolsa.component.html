@@ -68,7 +68,7 @@
 
     <div class="botones">
       <div class="bton">
-        <button type="button" class="btn btn-primary secundario" data-bs-toggle="modal" data-bs-target="#exampleModal"> ELiminar de lista de deseo </button>
+        <button type="button" class="btn btn-primary secundario" (click)="openModal(template)">ELiminar de la lista de deseo</button>
         <button type="button" class= "btn tn-primary agregar">Agregar al carrito</button>
       </div>
     </div>
@@ -150,7 +150,7 @@
     <div class="botones">
       <div class="bton">
         <button type="button" class="btn btn-primary secundario" (click)="openModal(template)">ELiminar del carrito</button>
-        <button type="button" class= "btn btn-primary agregar" routerLink="/metodoPago">Proceder con el pago</button>
+        <button type="button" class= "btn btn-primary agregar" routerLink="/metodoRetiro">Proceder con el pago</button>
       </div>
     </div>
 
