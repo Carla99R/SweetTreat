@@ -39,6 +39,7 @@ const routes: Routes = [
   {
     path: 'bolsa',
     component: BolsaComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'perfil',
