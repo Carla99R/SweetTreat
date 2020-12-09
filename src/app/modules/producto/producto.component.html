@@ -2,37 +2,38 @@
 
   <div class="foto">
     <figure>
-      <img src="product.imagen" class="principal">
+      <img src={{product?.imagen}} class="principal">
     </figure>
 
     <div class="fotos">
       <figure>
-        <img src="product.imagen" class="secundaria">
+        <img src={{product?.imagen}} class="secundaria">
       </figure>
 
       <figure>
-        <img src="product.imagen" class="secundaria">
+        <img src={{product?.imagen}} class="secundaria">
       </figure>
-    </div>
+    </div>s
 
   </div>
 
   <div class="info">
 
     <div class="datos">
-      <h2 class="nombre">product.nombre</h2>
-      <h5>Descripción del producto:</h5><h6 class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h6>
-      <h6 class="cantidades">Cantidad de bolsas:</h6>
-      <h6 class="cantidades">Cantidad de gramos:</h6>
+      <h2 class="nombre">{{product?.nombre}}</h2>
+      <h5>Descripción del producto:</h5><h6 class="descripcion">{{product?.descripcion}}</h6>
+      <h6 class="cantidades">Cantidad de bolsas: {{product?.bolsas}}</h6>
+      <h6 class="cantidades">Cantidad de gramos: {{product?.gramos}}</h6>
     </div>
 
     <div class="precio">
-      <h5 class="price">Precio: $product.precio</h5>
+      <h5 class="price">Precio: </h5>
+      <h5 class="descripcion">${{product?.precio}}</h5>
     </div>
 
     <div class="bton">
-      <button type="button" class="btn btn-primary secundario" routerLink="/bolsa"> Agregar a lista de deseo </button>
-      <button type="button" class= "btn tn-primary" id="agregar" routerLink="/bolsa">Agregar al carrito</button>
+      <button (click)="agregarDeseo()" type="button" class="btn btn-primary secundario" routerLink="/bolsa"> Agregar a lista de deseo </button>
+      <button (click)="agregarCarrito()" type="button" class= "btn tn-primary" id="agregar" routerLink="/bolsa">Agregar al carrito</button>
     </div>
   </div>
 

@@ -59,9 +59,8 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'producto',
+    path: 'producto/:id',
     component: ProductoComponent,
-    pathMatch: 'full'
   },
   {
     path: 'metodoPago',

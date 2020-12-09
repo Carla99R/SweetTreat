@@ -18,7 +18,7 @@ export class TiendaComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
       const productsCollection = firebase.firestore().collection("productos").get();
-      this.products = (await productsCollection).docs.map(doc => doc.data());
+      this.products = (await productsCollection).docs.map(doc => ({id: doc.id, ...doc.data()}));
   }
 }
 

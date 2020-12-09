@@ -18,6 +18,7 @@ export class RegistrarComponent implements OnInit {
   createUser(nombre: string, mail: string, password: string){
     this.auth.createUserWithEmailAndPassword(mail, password).then((user) => {
       console.log(user)
+      
      user.user?.updateProfile({
       displayName: nombre
     });
