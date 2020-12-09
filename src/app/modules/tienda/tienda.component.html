@@ -1,28 +1,10 @@
 <div class="productos">
-
-  <div class="imagenes row" >
-
-    <figure class="fig col-4">
-      <img src="../../../assets/images/candy1.jpg" class="img" alt="..." routerLink="/producto">
-      <p class="info" routerLink="/producto"><span class="nombre">Donas glaseadas</span> <span class="precio">($1)</span></p>
+<div class="imagenes row">
+  <div *ngFor="let product of products" class="fig col-4" id = "productos">
+    <figure>
+      <img src={{product.imagen}} class="img" alt="..." routerLink="/producto">
+      <p class="info" routerLink="['/producto', product.id]"><span class="nombre">{{product.nombre}}</span> <span class="precio">(${{product.precio}})</span></p>
     </figure>
-    <figure class="fig col-4">
-      <img src="../../../assets/images/candy1.jpg" class="img" alt="..." routerLink="/producto">
-      <p class="info" routerLink="/producto"><span class="nombre">Donas glaseadas</span> <span class="precio"> ($1)</span></p>
-    </figure>
-    <figure class="fig col-4">
-      <img src="../../../assets/images/candy1.jpg" class="img" alt="..." routerLink="/producto">
-      <p class="info" routerLink="/producto"><span class="nombre">Donas glaseadas</span> <span class="precio"> ($1)</span></p>
-    </figure>
-    <figure class="fig col-4">
-      <img src="../../../assets/images/candy1.jpg" class="img" alt="..." routerLink="/producto">
-      <p class="info" routerLink="/producto"><span class="nombre">Donas glaseadas</span> <span class="precio"> ($1)</span></p>
-    </figure>
-    <figure class="fig col-4">
-      <img src="../../../assets/images/candy1.jpg" class="img" alt="..." routerLink="/producto">
-      <p class="info" routerLink="/producto"><span class="nombre">Donas glaseadas</span> <span class="precio"> ($1)</span></p>
-    </figure>
-
   </div>
-
+</div>
 </div>

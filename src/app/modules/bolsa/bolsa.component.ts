@@ -9,7 +9,7 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 })
 export class BolsaComponent implements OnInit {
   message: string;
-  modalRef: BsModalRef;
+  //modalRef: BsModalRef;
   constructor(private modalService: BsModalService) {
     this.message = '';
   }
@@ -17,17 +17,17 @@ export class BolsaComponent implements OnInit {
   }
 
   openModal(template: TemplateRef<any>): void {
-    this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
+    //this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
   }
 
   confirm(): void {
     this.message = 'Confirmed!';
-    this.modalRef.hide();
+    //this.modalRef.hide();
   }
 
   decline(): void {
     this.message = 'Declined!';
-    this.modalRef.hide();
+    //this.modalRef.hide();
   }
 
 }

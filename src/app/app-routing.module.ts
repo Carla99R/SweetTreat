@@ -60,7 +60,8 @@ const routes: Routes = [
   },
   {
     path: 'producto',
-    component: ProductoComponent
+    component: ProductoComponent,
+    pathMatch: 'full'
   },
   {
     path: 'metodoPago',
