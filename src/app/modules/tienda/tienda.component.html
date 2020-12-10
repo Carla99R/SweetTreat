@@ -1,6 +1,6 @@
 <div class="productos">
 <div class="imagenes row">
-  <div *ngFor="let product of products" class="fig col-4" id = "productos">
+  <div *ngFor="let product of products" class="fig col-12 col-md-6 col-lg-4" id = "productos">
     <figure>
       <img src={{product.imagen}} class="img" alt="..." routerLink="/producto/{{product.id}}">
       <p class="info" routerLink="['/producto/{{product.id}}']"><span class="nombre">{{product.nombre}}</span> <span class="precio">(${{product.precio}})</span></p>
