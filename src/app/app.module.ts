@@ -29,11 +29,7 @@ import {ModalModule} from 'ngx-bootstrap/modal';
 import { MetodoRetiroComponent } from './modules/metodo-retiro/metodo-retiro.component';
 import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-<<<<<<< HEAD
 import { AdminPrincipalComponent } from './modules/admin-principal/admin-principal.component';
-=======
-import { FacturaComponent } from './modules/factura/factura.component';
->>>>>>> a45a0b910e48f6ce988d8fe957ac153907ccba77
 
 @NgModule({
   declarations: [
@@ -53,11 +49,7 @@ import { FacturaComponent } from './modules/factura/factura.component';
     ProductoComponent,
     MetodoPagoComponent,
     MetodoRetiroComponent,
-<<<<<<< HEAD
     AdminPrincipalComponent
-=======
-    FacturaComponent
->>>>>>> a45a0b910e48f6ce988d8fe957ac153907ccba77
   ],
   imports: [
     BrowserModule,
