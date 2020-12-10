@@ -4,72 +4,33 @@
 
     <h4 class="titulo">Lista de deseo</h4>
 
-    <div class="fotos">
+    <div *ngFor="let producto of productoDeseo; let i = index" class="fotos">
 
-      <figure class="info">
+      <figure  class="info">
 
         <div class="imagen">
-          <h2 class="nombre">Nombre del producto</h2>
-          <img src="assets/images/candy1.jpg" class="img" routerLink="/producto">
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" class="flexCheckIndeterminate">
+          <h2 class="nombre">{{producto.nombre}}</h2>
+          <img src={{producto.imagen}} class="img" routerLink="/producto">
         </div>
 
         <div class="datos">
 
-          <h6 class="cantidades">Cantidad de bolsas:</h6>
-          <h6 class="cantidades">Cantidad de gramos:</h6>
-          <h5 class="price">Precio:</h5>
-        </div>
-
-      </figure>
-
-    <figure class="info">
-
-      <div class="imagen">
-        <h2 class="nombre">Nombre del producto</h2>
-        <img src="assets/images/candy1.jpg" class="img" routerLink="/producto">
-      </div>
-
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" class="flexCheckIndeterminate">
-      </div>
-
-      <div class="datos">
-
-        <h6 class="cantidades">Cantidad de bolsas:</h6>
-        <h6 class="cantidades">Cantidad de gramos:</h6>
-        <h5 class="price">Precio:</h5>
-      </div>
-
-    </figure>
-
-      <figure class="info">
-
-        <div class="imagen">
-          <h2 class="nombre">Nombre del producto</h2>
-          <img src="assets/images/candy1.jpg" class="img" routerLink="/producto">
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" class="flexCheckIndeterminate">
-        </div>
-
-        <div class="datos">
-
-          <h6 class="cantidades">Cantidad de bolsas:</h6>
-          <h6 class="cantidades">Cantidad de gramos:</h6>
-          <h5 class="price">Precio:</h5>
+          <h6 class="cantidades">Cantidad de bolsas: {{deseo[i].cantidad}}</h6>
+          <h6 class="cantidades">Cantidad de gramos: {{producto.gramos}}</h6>
+          <h5 class="cantidades">Precio: ${{producto.precio}}</h5>
         </div>
 
       </figure>
 
     <div class="botones">
       <div class="bton">
+
         <button type="button" class="btn btn-primary secundario" >ELiminar de la lista de deseo</button>
         <button type="button" class= "btn tn-primary agregar">Agregar al carrito</button>
+
+        <button (click)="eliminarDeseo(i)" type="button" class="btn btn-primary secundario" >ELiminar de la lista de deseo</button>
+        <button (click)="agregarCarrito(i)" type="button" class= "btn tn-primary agregar" routerLink="/bolsa">Agregar al carrito</button>
+
       </div>
     </div>
 
@@ -84,72 +45,35 @@
   <div class="bolsa">
 
     <h4 class="titulo">Carrito</h4>
-    <div class="fotos">
+    <div *ngFor="let producto of productoCarrito; let i = index" class="fotos">
       <figure class="info">
 
         <div class="imagen">
-          <h2 class="nombre">Nombre del producto</h2>
-          <img src="assets/images/candy1.jpg" class="img" routerLink="/producto">
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" class="flexCheckIndeterminate">
+          <h2 class="nombre">{{producto.nombre}}</h2>
+          <img src={{producto.imagen}} class="img" routerLink="/producto">
         </div>
 
         <div class="datos">
 
-          <h6 class="cantidades">Cantidad de bolsas:</h6>
-          <h6 class="cantidades">Cantidad de gramos:</h6>
-          <h5 class="price">Precio:</h5>
+          <h6 class="cantidades">Cantidad de bolsas: {{carrito[i].cantidad}}</h6>
+          <h6 class="cantidades">Cantidad de gramos: {{producto.gramos}}</h6>
+          <h5 class="cantidades">Precio: ${{producto.precio}}</h5>
         </div>
 
       </figure>
-
-      <figure class="info">
-
-        <div class="imagen">
-          <h2 class="nombre">Nombre del producto</h2>
-          <img src="assets/images/candy1.jpg" class="img" routerLink="/producto">
+      <div class="botones">
+        <div class="bton">
+          <button (click)="eliminarCarrito(i)" type="button" class="btn btn-primary secundario">ELiminar del carrito</button>
         </div>
-
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" class="flexCheckIndeterminate">
-        </div>
-
-        <div class="datos">
-
-          <h6 class="cantidades">Cantidad de bolsas:</h6>
-          <h6 class="cantidades">Cantidad de gramos:</h6>
-          <h5 class="price">Precio:</h5>
-        </div>
-
-      </figure>
-
-      <figure class="info">
-
-        <div class="imagen">
-          <h2 class="nombre">Nombre del producto</h2>
-          <img src="assets/images/candy1.jpg" class="img" routerLink="/producto">
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" class="flexCheckIndeterminate">
-        </div>
-
-        <div class="datos">
-
-          <h6 class="cantidades">Cantidad de bolsas:</h6>
-          <h6 class="cantidades">Cantidad de gramos:</h6>
-          <h5 class="price">Precio:</h5>
-        </div>
-
-      </figure>
+      </div>
 
     </div>
 
     <div class="botones">
       <div class="bton">
+
         <button type="button" class="btn btn-primary secundario" >ELiminar del carrito</button>
+
         <button type="button" class= "btn btn-primary agregar" routerLink="/metodoRetiro">Proceder con el pago</button>
       </div>
     </div>
