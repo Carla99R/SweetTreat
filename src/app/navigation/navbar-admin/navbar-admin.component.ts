@@ -15,7 +15,7 @@ export class NavbarAdminComponent implements OnInit {
   flag = false;
   help = true;
   user: any;
-  modalRef: BsModalRef<any> | undefined;
+  modalRef!: BsModalRef<any>;
   constructor(private router: Router, private auth: AngularFireAuth, private authService: AuthService,
               private modalService: BsModalService) {
     this.authService.authStateUser().subscribe(a => {
