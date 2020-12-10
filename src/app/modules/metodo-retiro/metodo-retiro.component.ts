@@ -18,4 +18,12 @@ export class MetodoRetiroComponent implements OnInit {
     this.flag = !this.flag;
   }
 
+  visibilidad(selector: any, visible: any) {
+    const elemento = document.querySelector(selector);
+    console.log(elemento);
+    if (elemento != null) {
+      elemento.style.display = visible?'block':'none';
+    }
+  }
+
 }
