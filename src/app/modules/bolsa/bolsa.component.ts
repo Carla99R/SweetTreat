@@ -39,7 +39,7 @@ export class BolsaComponent implements OnInit {
       const producto = productsCollection.doc(this.deseo[index].producto).get();
       this.productoDeseo.push((await producto).data());
     }
-    for (let index = 0; index < this.deseo.length; index++) {
+    for (let index = 0; index < this.carrito.length; index++) {
       const producto2 = productsCollection.doc(this.carrito[index].producto).get();
       this.productoCarrito.push((await producto2).data());
     }
@@ -58,5 +58,40 @@ export class BolsaComponent implements OnInit {
     this.message = 'Declined!';
     //this.modalRef.hide();
   }
+
+  async agregarCarrito(i: any){
+    const db = await firebase.firestore();
+    await db.collection("carritos").add({
+      usuario: this.user.uid,
+      producto: this.deseo[i].producto,
+      cantidad: this.deseo[i].cantidad
+    })
+    .then((docRef) => {
+      console.log("Document written with ID: ", docRef.id);
+      this.eliminarDeseo(i);
+    })
+    .catch(function(error) {
+      console.error("Error adding document: ", error);
+    });
+    }
+
+
+  async eliminarDeseo(i: any){
+    const db = await firebase.firestore();
+    db.collection("deseos").doc(this.deseo[i].id).delete().then(function() {
+      console.log("Document successfully deleted!");
+      }).catch(function(error) {
+      console.error("Error removing document: ", error);
+  });
+    }
+
+  async eliminarCarrito(i: any){
+      const db = await firebase.firestore();
+      db.collection("carritos").doc(this.carrito[i].id).delete().then(function() {
+        console.log("Document successfully deleted!");
+        }).catch(function(error) {
+        console.error("Error removing document: ", error);
+    });
+      }
 
 }
