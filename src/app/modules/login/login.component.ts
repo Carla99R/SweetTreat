@@ -12,18 +12,28 @@ import { User } from '../../shared/models/user.interface';
 })
 export class LoginComponent implements OnInit {
   user: any;
+  admin: any;
   constructor(private auth: AngularFireAuth, private authService: AuthService, private router: Router) {
-    this.authService.authStateUser().subscribe(a => {
-      this.user = a;
-    });
   }
 
   ngOnInit(): void {
   }
 
   login(email: string, password: string): void{
-    this.auth.signInWithEmailAndPassword(email, password).then(function() {
+    this.auth.signInWithEmailAndPassword(email, password).then(async () => {
       console.log('logged in');
+      this.authService.authStateUser().subscribe(a => {
+        this.user = a;
+        console.log(this.user.uid);
+      });
+      const adminCollection = firebase.firestore().collection('carritos').where('usuario', '==', this.user.uid).get();
+      this.admin = (await adminCollection).docs.map(doc => ({id: doc.id, ...doc.data()}));
+
+      if (this.admin.admin) {
+        this.router.navigate(['/admin']);
+      } else {
+        this.router.navigate(['/home']);
+      }
     })
     .catch(function(error) {
       console.log(error);

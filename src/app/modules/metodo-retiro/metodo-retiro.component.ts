@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/auth';
+import firebase from 'firebase/app';
+import { AuthService } from 'src/app/service/auth.service';
+import 'firebase/firestore';
 
 @Component({
   selector: 'app-metodo-retiro',
@@ -7,10 +11,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MetodoRetiroComponent implements OnInit {
   flag = false;
-  constructor() { }
-
-  ngOnInit(): void {
+  user: any;
+  usuario: any;
+  constructor( private authService: AuthService,  private auth: AngularFireAuth) {
+    this.authService.authStateUser().subscribe(a => {
+      this.user = a;
+      console.log(this.user.uid);
+    });
   }
+
+
+  async ngOnInit(): Promise<void> {
+
+    const usuarioRef = await firebase.firestore().collection('usuarios').doc(this.user.uid).get();
+    if (usuarioRef.exists) {
+      this.usuario = usuarioRef.data();
+    }
+    else {
+      const usuarioRef = await firebase.firestore().collection('usuarios').doc("plantilla").get();
+      this.usuario = usuarioRef.data();
+    }
+   
+  }
+
   delivery(): void {
     this.flag = !this.flag;
   }

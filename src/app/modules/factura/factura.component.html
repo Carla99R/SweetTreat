@@ -4,41 +4,21 @@
     <h4 class="titulo">Factura</h4>
   </div>
 
-  <div class="product">
+  <div *ngFor="let producto of productoCarrito; let i = index" class="product">
 
     <div class="imagen">
       <figure>
-        <img class="im" src="../../../assets/images/candy1.jpg">
+        <img class="im" src={{producto.imagen}}>
       </figure>
-      <p class="name">Nombre</p>
+      <p class="name">{{producto.nombre}}</p>
     </div>
 
     <div class="gramaje">
-      <p class="secundario">X gr</p>
+      <p class="secundario">{{producto.gramos}} gr</p>
     </div>
 
     <div class="precio">
-      <p class="secundario">($$)</p>
-    </div>
-
-
-  </div>
-
-  <div class="product">
-
-    <div class="imagen">
-      <figure>
-        <img class="im" src="../../../assets/images/candy1.jpg">
-      </figure>
-      <p class="name">Nombre</p>
-    </div>
-
-    <div class="gramaje">
-      <p class="secundario">X gr</p>
-    </div>
-
-    <div class="precio">
-      <p class="secundario">($$)</p>
+      <p class="secundario">(${{producto.precio}})</p>
     </div>
 
 
@@ -47,7 +27,7 @@
   <div class="pago">
     <div class="total">
       <p class="tot">Total</p>
-      <p class="tot">($$$)</p>
+      <p class="tot">(${{total}})</p>
     </div>
   </div>
 
