@@ -17,8 +17,8 @@
       </div>
 
       <div class="icon" *ngIf="user">
-        <span class="material-icons iconos" routerLink="/agregarAdmin">add</span>
-        <span class="material-icons iconos" id="perfil" routerLink="/perfil">person</span><p id="user">{{user.displayName}}</p>
+        <button type="button" class="btn btn-primary iconos" (click)="openModal(template)"><span class="material-icons iconos" >add</span></button>
+        <span class="material-icons iconos" id="perfil" >person</span><p id="user">{{user.displayName}}</p>
         <span class="material-icons login" (click)="logout()" >login</span>
       </div>
       <div class="icon" *ngIf="!user">
@@ -61,4 +61,19 @@
     </div>
   </div>
 </div>
+
+
+<!-- Modal -->
+
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Sweet Treat</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <app-agregar-admin></app-agregar-admin>
+  </div>
+</ng-template>
 

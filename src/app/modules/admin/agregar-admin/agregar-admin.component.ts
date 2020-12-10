@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AngularFireAuth} from '@angular/fire/auth';
 
 @Component({
   selector: 'app-agregar-admin',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgregarAdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(private auth: AngularFireAuth) { }
 
   ngOnInit(): void {
   }
-
+  createUser(nombre: string, mail: string, password: string): void{
+    this.auth.createUserWithEmailAndPassword(mail, password).then((user) => {
+      console.log(user);
+      user.user?.updateProfile({
+        displayName: nombre
+      });
+    })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+      });
+  }
 }
