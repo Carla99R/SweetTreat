@@ -1,0 +1,50 @@
+
+.fig{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.productos{
+  background-color: #F8EFEF;
+  width: 100%;
+  height: 100vh;
+}
+
+.info{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nombre{
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.precio{
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+}
+
+
+.secundario{
+  cursor: pointer;
+  background-color: #FEE8E8;
+  border-radius: 15px;
+  color: #FA9AA8;
+  font-size: 0.8em;
+  border: transparent;
+  box-shadow: 1px 2px gray;
+  font-weight: bold;
+}
+
+.bton{
+  display: flex;
+  justify-content: space-between;
+  margin: 3%;
+}
+
+
