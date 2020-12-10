@@ -34,32 +34,32 @@ export class ProductoComponent implements OnInit {
     console.log(this.id);
     const bolsas = 1;
     const db = await firebase.firestore();
-    await db.collection("deseos").add({
+    await db.collection('deseos').add({
       usuario: this.user.uid,
       producto: this.id,
       cantidad: bolsas
     })
     .then(function(docRef) {
-      console.log("Document written with ID: ", docRef.id);
+      console.log('Document written with ID: ', docRef.id);
     })
     .catch(function(error) {
-      console.error("Error adding document: ", error);
+      console.error('Error adding document: ', error);
     });
     }
 
     async agregarCarrito(){
       const bolsas = 1;
       const db = await firebase.firestore();
-      await db.collection("carritos").add({
+      await db.collection('carritos').add({
         usuario: this.user.uid,
         producto: this.id,
         cantidad: bolsas
       })
       .then(function(docRef) {
-        console.log("Document written with ID: ", docRef.id);
+        console.log('Document written with ID: ', docRef.id);
       })
       .catch(function(error) {
-        console.error("Error adding document: ", error);
+        console.error('Error adding document: ', error);
       });
       }
 

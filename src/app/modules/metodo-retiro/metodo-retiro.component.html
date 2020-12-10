@@ -3,24 +3,57 @@
   <div>
     <h4 class="metodo">Escoja un método de retiro</h4>
   </div>
-  <div>
-    <div class="row contenedor">
-      <div class="col-xs-12 col-12 col-sm-6 mb-3 mere">
-        <div class="btn-group" dropdown>
-          <button id="button-autoclose1" dropdownToggle type="button" class="btn btn-primary dropdown-toggle secundario"
-                  aria-controls="dropdown-autoclose1">
-            Metodo de retiro <span class="caret"></span>
-          </button>
-          <ul id="dropdown-autoclose1" *dropdownMenu class="dropdown-menu"
-              role="menu" aria-labelledby="button-autoclose1">
-            <li role="menuitem"><a class="dropdown-item" >Delivery</a></li>
-            <li role="menuitem"><a class="dropdown-item" >Pickup</a></li>
-          </ul>
+
+  <div class="info">
+    <div class=" contenedor">
+      <select class="form-select secundario" aria-label="Default select example ">
+        <option selected class="secundario">Seleccione metodo de retiro</option>
+        <option value="1" (click)="delivery()" >Delivery</option>
+        <option value="2" (click)="pickup()">Pickup</option>
+      </select>
+    </div>
+
+    <div id="delivery" class="row" [ngStyle]="{'display': !flag ? 'block':'none'}">
+
+      <div class="formulario">
+        <div class="mb-3 col-lg-6 dialogo">
+          <label for="formGroupExampleInput" class="form-label">Nombre: </label>
+          <input type="text" class="form-control" id="formGroupExampleInput">
+        </div>
+        <div class="mb-3 col-lg-6 dialogo">
+          <label for="formGroupExampleInput2" class="form-label">Dirección: </label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="1234 Main St">
+        </div>
+        <div class="mb-3 col-lg-6 dialogo">
+          <label for="formGroupExampleInput2" class="form-label">Teléfono: </label>
+          <input type="text" class="form-control" id="formGroupExampleInput3" >
         </div>
       </div>
 
+
     </div>
+
+    <div id="pickup" [ngStyle]="{'display': flag ? 'block':'none'}">
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Pickup</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Sedes disponibles</h6>
+            <p class="card-text">San Bernardino</p>
+            <p class="card-text">Terrazas del Ávila</p>
+            <p class="card-text">Chacao</p>
+
+          </div>
+        </div>
+
+    </div>
+
   </div>
 
 
-</div>
+  <div class="bton">
+    <button type="button" class="btn-primary pagar" routerLink="/metodoPago">Pagar</button>
+  </div>
+
+  </div>
+

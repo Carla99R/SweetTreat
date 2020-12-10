@@ -1,5 +1,4 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
+import { Component, OnInit} from '@angular/core';
 
 
 @Component({
@@ -8,26 +7,12 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
   styleUrls: ['./bolsa.component.css']
 })
 export class BolsaComponent implements OnInit {
-  message: string;
-  //modalRef: BsModalRef;
-  constructor(private modalService: BsModalService) {
-    this.message = '';
+
+
+  constructor() {
   }
   ngOnInit(): void {
   }
 
-  openModal(template: TemplateRef<any>): void {
-    //this.modalRef = this.modalService.show(template, {class: 'modal-sm'});
-  }
-
-  confirm(): void {
-    this.message = 'Confirmed!';
-    //this.modalRef.hide();
-  }
-
-  decline(): void {
-    this.message = 'Declined!';
-    //this.modalRef.hide();
-  }
 
 }
