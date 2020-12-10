@@ -29,6 +29,7 @@ import {ModalModule} from 'ngx-bootstrap/modal';
 import { MetodoRetiroComponent } from './modules/metodo-retiro/metodo-retiro.component';
 import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FacturaComponent } from './modules/factura/factura.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EditorPedidosComponent,
     ProductoComponent,
     MetodoPagoComponent,
-    MetodoRetiroComponent
+    MetodoRetiroComponent,
+    FacturaComponent
   ],
   imports: [
     BrowserModule,

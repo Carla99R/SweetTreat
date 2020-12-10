@@ -1,6 +1,5 @@
 
 import { Component, OnInit, TemplateRef } from '@angular/core';
-import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import { AuthService } from 'src/app/service/auth.service';
