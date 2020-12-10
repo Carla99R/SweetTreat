@@ -1,18 +1,42 @@
 @font-face {
-  font-family: 'wus';
+  font-family: 'ws';
   src: url("../../../assets/fonts/new_dimension/New Dimension.otf");
 }
 
 @font-face {
-  font-family: 'su';
+  font-family: 'us';
   src: url("../../../assets/fonts/bawnee/bawnee.otf");
 }
 
-.pago{
+.factura{
   width: 100%;
   height: 100vh;
   background-color:#F8EFEF;
-  position: fixed;
+}
+
+.product{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+}
+
+.images{
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen{
+  display: flex;
+}
+
+.im{
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
 }
 
 .titulo{
@@ -24,40 +48,29 @@
   padding: 3%;
 }
 
-.metodos{
-  display: flex;
-  flex-direction: column;
-}
-
-.tipo{
+.name{
+  padding-left: 5%;
   font-size: 1.5em;
-  cursor: pointer;
-  padding-top: 3%;
 }
 
-.activo{
-  font-weight: bolder;
-  font-size: 2em;
-}
-
-.tipo:hover{
-  color: steelblue;
+.secundario{
+  font-size: 1.3em;
+  font-weight: lighter;
 }
 
 .but{
   margin-top: 5%;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-content: center;
   align-items: center;
-  padding-right: 10%;
 }
 
-.pagar{
+.confirmar{
   display: flex;
-  justify-content: flex-end;
-  font-family: su;
+  justify-content: center;
+  font-family: us;
   cursor: pointer;
   padding-left: 5px;
   padding-right: 5px;
@@ -70,21 +83,23 @@
   font-weight: bold;
 }
 
-.inf{
-  padding-top: 3%;
+.total{
+  width: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  align-content: center;
+  border: 2px solid black;
 }
 
-.principal{
-  font-size: 1.1em;
-  font-weight: bold;
-}
-
-.titles{
+.pago{
   display: flex;
-  justify-content: center;
-  font-weight: bolder;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 8%;
+
+}
+
+.tot{
+  font-weight: bold;
+  font-size: 1.1em;
 }

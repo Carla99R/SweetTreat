@@ -13,6 +13,7 @@ import {EditorPedidosComponent} from './modules/editor-pedidos/editor-pedidos.co
 import {ProductoComponent} from './modules/producto/producto.component';
 import {MetodoPagoComponent} from './modules/metodo-pago/metodo-pago.component';
 import {MetodoRetiroComponent} from './modules/metodo-retiro/metodo-retiro.component';
+import {FacturaComponent} from './modules/factura/factura.component';
 
 const redirectUnauththorizedToLogin = () => redirectUnauthorizedTo(['contactanos']);
 const redirectLoggedInToTienda = () => redirectLoggedInTo(['tienda']);
@@ -70,6 +71,11 @@ const routes: Routes = [
   {
     path: 'metodoRetiro',
     component: MetodoRetiroComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'factura',
+    component: FacturaComponent,
     canActivate: [AuthGuard]
   }
 ];
