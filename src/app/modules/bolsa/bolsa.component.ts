@@ -20,6 +20,10 @@ export class BolsaComponent implements OnInit {
   productoCarrito: any[] = [];
 
   constructor(private authService: AuthService) {
+    this.authService.authStateUser().subscribe(a => {
+      this.user = a;
+      console.log(this.user.uid);
+    });
   }
 
   async ngOnInit(): Promise<void> {
