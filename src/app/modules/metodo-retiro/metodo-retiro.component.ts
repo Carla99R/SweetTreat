@@ -17,6 +17,7 @@ export class MetodoRetiroComponent implements OnInit {
   pickup(): void {
     this.flag = !this.flag;
   }
+
   visibilidad(selector: any, visible: any) {
     const elemento = document.querySelector(selector);
     console.log(elemento);
@@ -24,4 +25,5 @@ export class MetodoRetiroComponent implements OnInit {
       elemento.style.display = visible?'block':'none';
     }
   }
+
 }
