@@ -55,7 +55,6 @@ import { AgregarAdminComponent } from './modules/admin/agregar-admin/agregar-adm
     ProductoComponent,
     MetodoPagoComponent,
     MetodoRetiroComponent,
-    AdminPrincipalComponent,
     FacturaComponent,
     NavbarAdminComponent,
     InicioAdminComponent,
