@@ -29,12 +29,13 @@ import {ModalModule} from 'ngx-bootstrap/modal';
 import { MetodoRetiroComponent } from './modules/metodo-retiro/metodo-retiro.component';
 import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { FacturaComponent } from './modules/factura/factura.component';
 import { NavbarAdminComponent } from './navigation/navbar-admin/navbar-admin.component';
-import { InicioAdminComponent } from './modules/admin/inicio-admin/inicio-admin.component';
 import { InventarioComponent } from './modules/admin/inventario/inventario.component';
 import { RegistroComponent } from './modules/admin/registro/registro.component';
 import { AgregarAdminComponent } from './modules/admin/agregar-admin/agregar-admin.component';
+import { AgregarProductoComponent } from './modules/admin/agregar-producto/agregar-producto.component';
 
 
 @NgModule({
@@ -57,10 +58,10 @@ import { AgregarAdminComponent } from './modules/admin/agregar-admin/agregar-adm
     MetodoRetiroComponent,
     FacturaComponent,
     NavbarAdminComponent,
-    InicioAdminComponent,
     InventarioComponent,
     RegistroComponent,
-    AgregarAdminComponent
+    AgregarAdminComponent,
+    AgregarProductoComponent
 
   ],
   imports: [
