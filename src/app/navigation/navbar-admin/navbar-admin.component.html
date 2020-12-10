@@ -8,19 +8,16 @@
       <div class="links">
         <ul class="nav nav-pills nav-justified nav2">
           <li class="nav-item"  routerLinkActive="activo">
-            <a class="nav-link " routerLink="/tienda">Tienda</a>
+            <a class="nav-link " routerLink="/inventario">Inventario</a>
           </li>
           <li class="nav-item" routerLinkActive="activo">
-            <a  class="nav-link" routerLink="/nosotros" >Nosotros</a>
-          </li>
-          <li class="nav-item" routerLinkActive="activo">
-            <a class="nav-link" routerLink="/contactanos" >Contáctanos</a>
+            <a  class="nav-link" routerLink="/registro" >Registro</a>
           </li>
         </ul>
       </div>
 
       <div class="icon" *ngIf="user">
-        <span class="material-icons iconos" routerLink="/bolsa">shopping_bag</span>
+        <span class="material-icons iconos" routerLink="/agregarAdmin">add</span>
         <span class="material-icons iconos" id="perfil" routerLink="/perfil">person</span><p id="user">{{user.displayName}}</p>
         <span class="material-icons login" (click)="logout()" >login</span>
       </div>
@@ -64,6 +61,4 @@
     </div>
   </div>
 </div>
-
-
 

@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'wonka';
+  src: url("../../../assets/fonts/willy-wonka/WillyWonka.ttf");
+}
+
+.title{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+
+}
+
+.icon{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  font-size: 1em;
+  width: 50%;
+  flex: 0.4;
+}
+
+.icon_user{
+  display: flex;
+  font-size: 10px;
+}
+
+.icon p{
+  display: flex;
+  justify-content: flex-start;
+  flex: 3;
+  color: black;
+  font-size: 2em;
+  padding-left: 5px;
+  padding-top: 15px;
+}
+
+#user{
+  display: flex;
+  justify-content: center;
+  flex: 3;
+  color: #ECEFF1;
+  font-size: 20px;
+  flex: 1;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.fondo{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background: #EECCD1;
+  width: 100%;
+}
+
+#titulo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 2.5em;
+  flex: 0.5;
+  color: whitesmoke;
+  cursor: pointer;
+  padding-left: 40px;
+  font-family: wonka;
+}
+
+
+.icon_user{
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+#logout{
+  display: flex;
+  justify-content: space-between;
+  color: #ECEFF1;
+  font-size: 3em;
+  padding-top: 5px;
+  cursor: pointer;
+  flex: 0.2;
+}
+
+.nav-link{
+  cursor: pointer;
+}
+
+.sections{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.links{
+  padding-right: 40px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex: 0.8;
+  justify-content: center;
+}
+.nav-item{
+  margin-left: 10px;
+}
+
+a{
+  color: whitesmoke;
+}
+
+.nav2{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.bton{
+  background-color: transparent;
+  border: transparent;
+}
+
+
+a.nav-link{
+  font-size: 1.2em;
+}
+
+.nav-pills .nav-link{
+  display: flex;
+  justify-content: space-between;
+  font-weight: lighter;
+}
+
+.modal-title{
+  width: 100%;
+  font-size: 1.5em;
+  padding: 0.5em;
+  font-family: wonka;
+  color: #ECEFF1;
+}
+
+.modal-header{
+  background-color: #C6F0E6;
+}
+
+.modal-footer{
+  background-color: #C6F0E6;
+  height: 4em;
+}
+
+.modal-footer p{
+  padding-right: 1em;
+  font-size: 0.7em;
+}
+
+#recuperar{
+  cursor: pointer;
+  background-color: #E9D9D9;
+  border-radius: 10px;
+  color: #FA9AA8;
+  font-size: 0.7em;
+  border: transparent;
+  box-shadow: 1px 2px gray;
+}
+
+#registrar{
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #E9D9D9;
+  border-radius: 10px;
+  color: #FA9AA8;
+  font-size: 0.7em;
+  border: transparent;
+  box-shadow: 1px 2px gray;
+}
+
+.iconos{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+#perfil{
+  font-size: 2em;
+}
+
+.nav-item a:hover{
+  color: darkslategray;
+}
+
+.activo{
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+
+#user{
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.9;
+}
