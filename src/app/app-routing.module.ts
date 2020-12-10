@@ -14,6 +14,10 @@ import {ProductoComponent} from './modules/producto/producto.component';
 import {MetodoPagoComponent} from './modules/metodo-pago/metodo-pago.component';
 import {MetodoRetiroComponent} from './modules/metodo-retiro/metodo-retiro.component';
 import {FacturaComponent} from './modules/factura/factura.component';
+import {InicioAdminComponent} from './modules/admin/inicio-admin/inicio-admin.component';
+import {InventarioComponent} from './modules/admin/inventario/inventario.component';
+import {RegistroComponent} from './modules/admin/registro/registro.component';
+import {AgregarAdminComponent} from './modules/admin/agregar-admin/agregar-admin.component';
 
 const redirectUnauththorizedToLogin = () => redirectUnauthorizedTo(['contactanos']);
 const redirectLoggedInToTienda = () => redirectLoggedInTo(['tienda']);
@@ -76,6 +80,26 @@ const routes: Routes = [
   {
     path: 'factura',
     component: FacturaComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'inicioAdmin',
+    component: InicioAdminComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'inventario',
+    component: InventarioComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'registro',
+    component: RegistroComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'agregarAdmin',
+    component: AgregarAdminComponent,
     canActivate: [AuthGuard]
   }
 ];
