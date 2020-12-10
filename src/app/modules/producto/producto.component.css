@@ -13,6 +13,7 @@
   width: 100%;
   display: flex;
   background-color:#F8EFEF;
+  position: fixed;
 }
 
 .foto{

@@ -1,46 +1,38 @@
 <div class="producto">
+  <div class="foto">
+    <figure>
+      <img src={{product?.imagen}} class="principal">
+    </figure>
 
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-center">
-    
+    <div class="fotos">
+      <figure>
+        <img src={{product?.imagen}} class="secundaria">
+      </figure>
 
-        <div class="foto col-12 col-md-6 col-lg-4">
-          <figure>
-            <img src={{product?.imagen}} class="principal">
-          </figure>
+      <figure>
+        <img src={{product?.imagen}} class="secundaria">
+      </figure>
+    </div>
 
-        <div class="fotos col-12 col-md-6 col-lg-4">
-          <figure>
-            <img src={{product?.imagen}} class="secundaria">
-          </figure>
+  </div>
+  <div class="info">
+    <div class="datos">
+      <h2 class="nombre">{{product?.nombre}}</h2>
+      <h5>Descripción del producto:</h5><h6 class="descripcion">{{product?.descripcion}}</h6>
+      <h6 class="cantidades">Cantidad de bolsas: {{product?.bolsas}}</h6>
+      <h6 class="cantidades">Cantidad de gramos: {{product?.gramos}}</h6>
+    </div>
 
-          <figure>
-            <img src={{product?.imagen}} class="secundaria">
-          </figure>
-        </div>
+    <div class="precio">
+      <h5 class="price">Precio: </h5>
+      <h5 class="descripcion">${{product?.precio}}</h5>
+    </div>
 
-        </div>
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-center">
-        <div class="info">
-
-          <div class="datos">
-            <h2 class="nombre">{{product?.nombre}}</h2>
-            <h5>Descripción del producto:</h5><h6 class="descripcion">{{product?.descripcion}}</h6>
-            <h6 class="cantidades">Cantidad de bolsas: {{product?.bolsas}}</h6>
-            <h6 class="cantidades">Cantidad de gramos: {{product?.gramos}}</h6>
-          </div>
-
-          <div class="precio">
-            <h5 class="price">Precio: </h5>
-            <h5 class="descripcion">${{product?.precio}}</h5>
-          </div>
-
-          <div class="bton">
-            <button (click)="agregarDeseo()" type="button" class="btn btn-primary secundario" routerLink="/bolsa"> Agregar a lista de deseo </button>
-            <button (click)="agregarCarrito()" type="button" class= "btn tn-primary" id="agregar" routerLink="/bolsa">Agregar al carrito</button>
-          </div>
-        </div>
+    <div class="bton">
+      <button (click)="agregarDeseo()" type="button" class="btn btn-primary secundario" routerLink="/bolsa"> Agregar a lista de deseo </button>
+      <button (click)="agregarCarrito()" type="button" class= "btn tn-primary" id="agregar" routerLink="/bolsa">Agregar al carrito</button>
+    </div>
+  </div>
 
 </div>
 
