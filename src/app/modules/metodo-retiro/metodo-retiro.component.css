@@ -8,6 +8,11 @@
   src: url("../../../assets/fonts/petrichor_sublimey/Petrichor Sublimey.otf");
 }
 
+@font-face {
+  font-family: 'up';
+  src: url("../../../assets/fonts/bawnee/bawnee.otf");
+}
+
 .retiro {
   background-color: #F8EFEF;
   width: 100%;
@@ -34,24 +39,88 @@
   padding-left: 5px;
   padding-right: 5px;
   background-color: #FFFFFF;
-  border-radius: 15px;
+  border-radius: 3%;
   color: #9A8A8A;
   font-size: 1.5em;
   border: transparent;
   box-shadow: 1px 2px gray;
   font-weight: bold;
+  height: 3em;
+
+}
+
+.contenedor{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#delivery{
+  width: 40%;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #FFFFFF;
+  margin-top: 5%;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
-.contenedor{
+.bton{
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  width: 30%;
+}
+
+.pagar{
+  display: flex;
+  justify-content: center;
+  font-family: up;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  color: #9A8A8A;
+  font-size: 1.1em;
+  border: transparent;
+  box-shadow: 1px 2px gray;
+  font-weight: bold;
+}
+
+#delivery {
+  display: none;
+}
+
+#pickup {
+  display: none;
+}
+
+.dialogo{
   width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: center;
 }
 
-.mere{
+.formulario{
+  padding: 5%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  align-content: center;
 }

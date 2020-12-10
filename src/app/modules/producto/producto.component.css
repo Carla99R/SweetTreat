@@ -73,14 +73,25 @@
 .precio{
   display: flex;
   justify-content: center;
+  align-content: center;
   width: 100%;
 
 }
 
 .price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   font-family: one;
   font-size: 1.5em;
+}
+
+.monto{
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  font-size: 1.6em;
 }
 
 .bton{
