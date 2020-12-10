@@ -11,17 +11,17 @@ export class MetodoRetiroComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  delivery(): void {
-    this.flag = !this.flag;
-  }
-  pickup(): void {
-    this.flag = !this.flag;
-  }
-  visibilidad(selector, visible) {
-    const elemento = document.querySelector(selector);
-    console.log(elemento);
-    if (elemento != null) {
-      elemento.style.display = visible?'block':'none';
-    }
-  }
+  // delivery(): void {
+  //   this.flag = !this.flag;
+  // }
+  // pickup(): void {
+  //   this.flag = !this.flag;
+  // }
+  // visibilidad(selector, visible) {
+  //   const elemento = document.querySelector(selector);
+  //   console.log(elemento);
+  //   if (elemento != null) {
+  //     elemento.style.display = visible?'block':'none';
+  //   }
+  // }
 }
